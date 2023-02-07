@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.buss.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_history"
+        android:name="com.example.buss.ui.stories.StoriesFragment"
+        android:label="@string/title_history"
+        tools:layout="@layout/fragment_stories" />
+
+    <fragment
+        android:id="@+id/add"
+        android:name="com.example.buss.ui.upload.UploadFragment"
+        android:label="@string/title_add"
+        tools:layout="@layout/fragment_upload" />
+
+    <fragment
+        android:id="@+id/navigation_messages"
+        android:name="com.example.buss.ui.messages.MessagesFragment"
+        android:label="@string/title_messages"
+        tools:layout="@layout/fragment_messages" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.buss.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_navigation_profile_to_settingsFragment2"
+            app:destination="@id/settingsFragment2" />
+        <action
+            android:id="@+id/action_navigation_profile_to_abotUsFragment"
+            app:destination="@id/abotUsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment2"
+        android:name="com.example.buss.settings.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment2_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+        <action
+            android:id="@+id/action_settingsFragment2_to_socialNetworksFragment"
+            app:destination="@id/socialNetworksFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/abotUsFragment"
+        android:name="com.example.buss.about_us.AbotUsFragment"
+        android:label="fragment_abot_us"
+        tools:layout="@layout/fragment_abot_us" >
+        <action
+            android:id="@+id/action_abotUsFragment_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/socialNetworksFragment"
+        android:name="com.example.buss.social_networks.SocialNetworksFragment"
+        android:label="fragment_social_networks"
+        tools:layout="@layout/fragment_social_networks" >
+        <action
+            android:id="@+id/action_socialNetworksFragment_to_settingsFragment2"
+            app:destination="@id/settingsFragment2" />
+    </fragment>
+    <activity
+        android:id="@+id/uploadActivity"
+        android:name="com.example.buss.uploadActivity"
+        android:label="uploadActivity" />
+</navigation>

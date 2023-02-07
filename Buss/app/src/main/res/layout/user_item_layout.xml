@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="100dp"
+    android:layout_marginRight="100dp"
+    >
+
+
+<de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/user_profile_image_search"
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:src="@drawable/user"
+    android:padding="5dp"
+    android:layout_marginTop="10dp"
+    android:layout_centerHorizontal="true"
+    />
+
+        <TextView
+            android:id="@+id/user_name_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="user name"
+            android:textColor="@color/yellow"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_below="@+id/user_profile_image_search"
+            />
+
+        <Button
+            android:id="@+id/follow_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_name_search"
+            android:layout_centerHorizontal="true"
+            android:text="@string/follow"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/message_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/follow_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/message"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+

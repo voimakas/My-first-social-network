@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name"> Our Business</string>
+    <string name="title_home">home</string>
+    <string name="title_history">stories</string>
+    <string name="title_add">upload your</string>
+    <string name="title_messages">messages</string>
+    <string name="title_profile">profile</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="my_business">My businesses</string>
+    <string name="support">Support</string>
+    <string name="title_activity_settings">settings</string>
+    <string name="choose_theme">Choose Theme</string>
+    <string name="night_mode">Night Mode</string>
+    <string name="light_mode">Light Mode</string>
+    <string name="Theme_choose">Theme Choose</string>
+    <string name="my_add">Your Project</string>
+    <string name="choose_language">Language</string>
+    <string name="about_us">About Us</string>
+    <string name="log_out">Log Out</string>
+    <string name="action_bar_settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="social_networks">Social Networks</string>
+    <string name="title_activity_sign_in">SignInActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="client_id">81189442839-cgohstqapc345jjgi6q6gqtd9isfmoob.apps.googleusercontent.com</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="message">Message</string>
+    <string name="follow">Follow</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>
